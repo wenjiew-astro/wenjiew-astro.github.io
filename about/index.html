@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>关于笔者</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+
+  /* 确保内容浮在渐变层之上 */
+  #nav, main, .wrap{
+    position: relative;
+    z-index: 1;
+  }
+
+  /* 如果系统设置了“减少动画”，强制开启动画（可选） */
+  .force-anim .blob{
+    animation: drift var(--t, 38s) ease-in-out infinite alternate !important;
+  }
+
+  :root{
+    --bg:#f6f7fb;--text:#1f2937;--muted:#6b7280;
+    --card:#ffffff;--border:#e5e7eb;--chip:#f3f4f6;
+    --accent1:#60a5fa;--accent2:#34d399;--shadow:0 10px 30px rgba(0,0,0,.08);
+    --bar:#ffffffcc
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0b1220;--text:#e5e7eb;--muted:#94a3b8;
+      --card:#0f172a;--border:#334155;--chip:#111827;
+      --accent1:#60a5fa;--accent2:#34d399;--shadow:0 10px 30px rgba(0,0,0,.5);
+      --bar:#0b1220cc
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:linear-gradient(180deg,#eceff3,#f8fafc);color:var(--text)}
+  @media (prefers-color-scheme: dark){body{background:linear-gradient(180deg,#0b1220,#0e1530)}}
+  a{color:#2563eb;text-decoration:none}
+  @media (prefers-color-scheme: dark){a{color:#93c5fd}}
+
+  /* ===== 顶部导航：下移一点 + 去分割线 ===== */
+  #nav{
+    position: sticky;
+    top: 16px;              /* ← 让整条导航离页面顶部 16px，你也可以改成 24px/32px */
+    z-index: 50;
+    backdrop-filter: blur(8px);
+    background: var(--bar);
+    border-bottom: none;    /* ← 去掉顶部那条分割线 */
+  }
+  /* 透明导航：无黑条、只保留毛玻璃 */
+  #nav{
+    background: transparent !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    -webkit-backdrop-filter: blur(10px) saturate(140%);
+    backdrop-filter: blur(10px) saturate(140%);
+  }
+  .navwrap{max-width:1000px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:12px;position:relative}
+  .brand{font-weight:700;white-space:nowrap}
+  .right-space{margin-left:auto}
+  /* 居中菜单（与你原配置一致的思路） */
+  .menus_items{
+    position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+    display:flex; gap:.5rem; white-space:nowrap; max-width:calc(100% - 240px);
+  }
+  .menus_items>li{list-style:none; position:relative}
+  .menus_items>li>a{padding:6px 10px;border-radius:10px;color:inherit;display:inline-flex;gap:.4em;align-items:center}
+  .menus_items>li>a:hover{background:var(--chip)}
+  .menus_items>li.active>a{background:var(--chip);font-weight:600}
+  .has-sub:hover .sub{opacity:1; visibility:visible; transform:translateY(0)}
+  .sub{
+    position:absolute; left:0; top:100%; margin-top:8px; min-width:180px;
+    background:var(--card); border:1px solid var(--border); border-radius:12px; box-shadow:var(--shadow);
+    padding:8px; opacity:0; visibility:hidden; transform:translateY(6px); transition:.18s;
+  }
+  .sub li{list-style:none}
+  .sub a{display:flex; align-items:center; gap:.5em; color:inherit; padding:8px 10px; border-radius:8px}
+  .sub a:hover{background:var(--chip)}
+  .hamburger{margin-left:auto;border:1px solid var(--border);background:transparent;color:inherit;border-radius:10px;padding:6px 10px;cursor:pointer;display:none}
+  @media(max-width:900px){
+    .menus_items{position:static; transform:none; display:none; width:100%; flex-direction:column; gap:0; margin-top:8px}
+    .menus_items.open{display:block}
+    .menus_items>li>a{padding:10px 12px; border-radius:8px}
+    .has-sub .sub{position:static; transform:none; opacity:1; visibility:visible; box-shadow:none; border:none; padding:0; margin:0}
+    .has-sub .sub a{padding:8px 22px}
+    .hamburger{display:inline-block}
+    .right-space{display:none}
+  }
+
+  /* ===== 页面主体 ===== */
+  /* 顶部留白更大、介绍行距更舒服 */
+  .wrap{ padding-top: 80px !important; padding-bottom: 96px !important; }
+  .hero{ margin-top: 32px !important; }
+  .subline{ line-height: 1.85 !important; margin-top: 12px !important; letter-spacing: .2px; }
+  .wrap{max-width:1500px;margin:0 auto;padding:24px 16px 80px}
+  .hero{display:flex;gap:24px;align-items:flex-start;margin-top:12px}
+  .hero.photo-right{justify-content:space-between}
+  .hero .text{flex:1;min-width:0}
+  .hero h1{font-size:40px;margin:0;line-height:1.15}
+  .subline{color:var(--muted);max-width:780px;margin-top:6px}
+  .kpis{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+  .chip{font-size:14px;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:var(--chip)}
+
+  /* 照片在右侧：矩形轻圆角 + 响应式尺寸 */
+  .hero img{
+    width: 260px;          /* 桌面尺寸：接近学术主页的视觉效果 */
+    height: auto;
+    border-radius: 10px;   /* 0 = 完全直角；需要更“硬朗”可改 0 */
+    object-fit: cover;
+    background: var(--border);
+    margin-left: 8px;
+  }
+  @media(max-width:900px){
+    .hero{flex-direction:column}
+    .hero img{width: 180px; margin: 12px 0 0 0}  /* 移动端更紧凑 */
+  }
+
+  .grid{display:grid;gap:16px;grid-template-columns:1fr;margin-top:16px}
+  @media (min-width:860px){.grid{grid-template-columns:1fr 1fr}}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+  .card h3{margin:0 0 10px}
+  ul{margin:0;padding-left:20px}
+  .progress{height:12px;background:var(--chip);border-radius:999px;overflow:hidden;margin:6px 0 12px}
+  .bar{height:100%;background:linear-gradient(90deg,var(--accent1),var(--accent2))}
+  .pub li{margin-bottom:10px}
+  .badges{margin-top:6px}
+  .badges a{display:inline-block;margin:4px 8px 0 0;padding:6px 10px;border-radius:999px;border:1px solid var(--border);color:inherit}
+  footer{margin-top:24px;font-size:12px;color:var(--muted);text-align:center}
+  
+  /* —— 间距与行距：顶部更松、介绍行距更舒服 —— */
+  .wrap{ padding: 80px 16px 96px !important; }   /* ↑ 原来 24px，改为 56px */
+  .hero{ margin-top: 24px !important; }          /* 介绍区与导航再拉开一点 */
+  .hero h1{ margin: 0 0 12px !important; }
+  .subline{ line-height: 2.0 !important; margin-top: 10px !important; letter-spacing: .2px; }
+  .kpis{ gap: 10px !important; margin-top: 12px !important; }
+
+  /* —— 动态渐变背景（Apple 风格）：多彩模糊气泡缓慢漂移 —— */
+  /* 动态渐变背景（Apple 风格） */
+  .gradient-bg{
+    position: fixed;
+    inset: 0;
+    z-index: 0;            /* ← 关键：不能是 -1 */
+    overflow: hidden;
+    background:
+      radial-gradient(1000px 800px at 12% 12%, rgba(99,102,241,.08), transparent 60%),
+      radial-gradient(900px 700px at 88% 8%,   rgba(16,185,129,.06), transparent 60%);
+  }
+  .blob{
+    position: absolute; width: 40vmax; height: 40vmax; border-radius: 50%;
+    filter: blur(60px) saturate(120%);
+    opacity: .6; mix-blend-mode: screen;
+    animation: drift var(--t, 38s) ease-in-out infinite alternate;
+  }
+  /* 四个气泡（颜色可按喜好换） */
+  .blob.b1{ left:-12vmax; top:-10vmax;  --t: 36s;
+    background: radial-gradient(circle at 30% 30%, rgba(99,102,241,.85), transparent 60%); } /* indigo */
+  .blob.b2{ right:-14vmax; top:-8vmax;  --t: 44s;
+    background: radial-gradient(circle at 60% 40%, rgba(16,185,129,.85),  transparent 60%); } /* green */
+  .blob.b3{ left:8vmax;    bottom:-12vmax; --t: 40s;
+    background: radial-gradient(circle at 50% 60%, rgba(59,130,246,.85),  transparent 60%); } /* blue */
+  .blob.b4{ right:6vmax;   bottom:-10vmax; --t: 48s;
+    background: radial-gradient(circle at 40% 50%, rgba(236,72,153,.80),  transparent 60%); } /* pink */
+
+  @keyframes drift{
+    0%   { transform: translate(0,0) scale(1); }
+    50%  { transform: translate(6vmax,-4vmax) scale(1.06); }
+    100% { transform: translate(-5vmax,5vmax) scale(1.12); }
+  }
+  /* 深色模式轻微降亮、增模糊 */
+  @media (prefers-color-scheme: dark){
+    .blob{ opacity: .55; filter: blur(80px) saturate(120%); }
+  }
+  /* 关动画（系统偏好） */
+  /* @media (prefers-reduced-motion: reduce){
+    .blob{ animation: none; }
+  } */
+
+
+  /* 项目卡片：留白 + 行距 + 分隔线 + 右侧外链 */
+  .card h3{ margin: 0 0 14px !important; }
+
+  .card ul li{
+    list-style: none;
+    padding: 12px 0;                 /* ↑ 每条上下留白 */
+    line-height: 1.75;               /* ↑ 行距更舒展 */
+    gap: 16px;                       /* 标题/链接之间的水平间距 */
+  }
+
+  /* ========= 毛玻璃主题 ========= */
+  /* 可按需调：模糊半径&透明度 */
+  :root{
+    --glass-blur: 14px;
+    --glass-sat: 140%;
+    --glass-bg: rgba(255,255,255,.08);
+    --glass-bg-2: rgba(255,255,255,.02);
+    --glass-stroke: rgba(255,255,255,.22);
+    --glass-shadow: 0 12px 36px rgba(2,8,20,.28);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --glass-bg: rgba(13,16,28,.34);      /* 深色下略深 */
+      --glass-bg-2: rgba(255,255,255,.03);
+      --glass-stroke: rgba(255,255,255,.12);
+      --glass-shadow: 0 12px 36px rgba(2,8,20,.48);
+    }
+  }
+
+  /* 1) 页面卡片：项目 / 技能 / 论文 / 标签 */
+  .card{
+    background:
+      linear-gradient( to bottom right, var(--glass-bg), var(--glass-bg-2) ) !important;
+    border: 1px solid var(--glass-stroke) !important;
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
+    backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
+    box-shadow: var(--glass-shadow);
+  }
+
+  /* 2) 导航的下拉菜单也用玻璃效果 */
+  .sub{
+    background: linear-gradient( to bottom right, var(--glass-bg), var(--glass-bg-2) ) !important;
+    border: 1px solid var(--glass-stroke) !important;
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
+    backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
+    box-shadow: var(--glass-shadow);
+  }
+
+  /* 3) 顶部信息的小胶囊（学校/邮箱/城市/GitHub） */
+  .chip{
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--glass-stroke) !important;
+    -webkit-backdrop-filter: blur(10px) saturate(var(--glass-sat));
+    backdrop-filter: blur(10px) saturate(var(--glass-sat));
+  }
+
+  /* 4) 技能条的底色也做成半透明玻璃，保持对比 */
+  .progress{
+    background: rgba(255,255,255,.14) !important;
+    border: 1px solid rgba(255,255,255,.18);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+
+  /* 可选：卡片的圆角更“玻璃”一点 */
+  .card{ border-radius: 18px !important; }
+
+  /* === Hover 微交互（统一玻璃风） === */
+  /* 1) 卡片：轻抬 + 阴影增强 */
+  .card{
+    position: relative;
+    transform: translateY(0);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    will-change: transform;
+  }
+  .card:hover{
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 18px 48px rgba(2,8,20,.35);
+    border-color: rgba(255,255,255,.28);
+  }
+
+  /* 2) 顶部菜单 / 下拉 / 小胶囊 / 标签：轻浮起 */
+  .menus_items>li>a, .sub a, .chip, .badges a{
+    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+    will-change: transform;
+  }
+  .menus_items>li>a:hover, .sub a:hover, .chip:hover, .badges a:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(2,8,20,.18);
+  }
+
+  /* 3) 头像：轻微悬浮 */
+  .hero img{
+    transition: transform .28s ease, box-shadow .28s ease;
+    will-change: transform;
+  }
+  .hero img:hover{
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(2,8,20,.45);
+  }
+
+  /* 4) 技能条：轻微悬浮 */
+  .progress{ position: relative; overflow: hidden; }
+  .progress::before{
+    content:""; position:absolute; inset:0; width:30%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent);
+    transform: translateX(-130%); opacity:0; transition: opacity .3s ease;
+  }
+
+  /* 5) 低运动偏好：降级为仅阴影变化 */
+  @media (prefers-reduced-motion: reduce){
+    .card, .menus_items>li>a, .sub a, .chip, .badges a, .hero img{
+      transition: box-shadow .18s ease !important;
+      transform: none !important;
+      animation: none !important;
+    }
+  }
+
+
+  </style>
+</head>
+<body class="force-anim">
+  <script>
+    // 不改 <body> 也行，自动加上 force-anim
+    document.addEventListener('DOMContentLoaded', function () {
+      document.body.classList.add('force-anim');
+    });
+  </script>
+  <style>
+    /* 兜底：强制动画 */
+    .force-anim .blob{
+      animation: drift var(--t,38s) ease-in-out infinite alternate !important;
+    }
+  </style>
+
+  <!-- 动态渐变背景（在所有内容之下） -->
+  <div class="gradient-bg">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="blob b4"></span>
+  </div>
+  <!-- 顶部导航（与你菜单一致，且菜单居中） -->
+  <header id="nav">
+    <div class="navwrap">
+      <a class="brand" href="/">Wenjie Wang</a>
+      <button class="hamburger" aria-label="切换菜单" onclick="document.querySelector('.menus_items').classList.toggle('open')">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="menus_items">
+        <li><a href="/"><i class="fas fa-home"></i> 主页</a></li>
+        <li class="has-sub">
+          <a href="javascript:void(0)"><i class="fa fa-graduation-cap"></i> 博文</a>
+          <ul class="sub">
+            <li><a href="/categories/"><i class="fa fa-archive"></i> 分类</a></li>
+            <li><a href="/tags/"><i class="fa fa-tags"></i> 标签</a></li>
+            <li><a href="/archives/"><i class="fa fa-folder-open"></i> 归档</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="javascript:void(0)"><i class="fas fa-list"></i> 生活</a>
+          <ul class="sub">
+            <li><a href="/shuoshuo/"><i class="fa-brands fa-reddit"></i> 碎碎念</a></li>
+            <li><a href="/photos/"><i class="fa fa-camera-retro"></i> 相册</a></li>
+            <li><a href="/music/"><i class="fa fa-music"></i> 音乐</a></li>
+            <li><a href="/bangumi/"><i class="fas fa-video"></i> 追番</a></li>
+          </ul>
+        </li>
+        <li><a href="/links/"><i class="fa fa-link"></i> 友人帐</a></li>
+        <li><a href="/comments/"><i class="fa fa-paper-plane"></i> 留言板</a></li>
+        <li class="active"><a href="/about/"><i class="fas fa-heart"></i> 关于笔者</a></li>
+      </ul>
+      <div class="right-space"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- 照片右侧布局 -->
+    <section class="hero photo-right">
+      <div class="text">
+        <h1>Hi，我是王文杰</h1>
+        <div class="subline">研究方向：射电光度函数 · KDE · Copula</div>
+        <div class="subline">使用 COSMOS 等巡天数据，关注宇宙恒星形成历史，关注 AGN 反馈。</div>
+        <div class="kpis">
+          <span class="chip">学校：湖南师范大学</span>
+          <span class="chip">邮箱：<a href="mailto:wenjiew001@gmail.com">wenjiew001@gmail.com</a></span>
+          <span class="chip">城市：长沙</span>
+          <span class="chip"><a href="https://github.com/wenjiew-astro" target="_blank" rel="noopener">GitHub</a></span>
+        </div>
+      </div>
+      <!-- 头像：非圆角矩形，桌面 260px；移动端自动 180px -->
+      <img src="/img/20250713102251.jpg" alt="portrait">
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>我参与的项目</h3>
+        <ul>
+          <li><b>kdeLF</b> — 2D KDE 光度函数模块（权重/自适应带宽/OpenMP） ·
+            <a href="https://github.com/yuanzunli/kdeLF" target="_blank" rel="noopener">GitHub</a></li>
+          <li><b>Ascopy</b> — 一个 copula 方法的 python 包 ·
+            <a href="https://github.com/yuanzunli/Ascopy" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>技能</h3>
+        <div>Python（90%）<div class="progress"><div class="bar" style="width:90%"></div></div></div>
+        <div>Fortran（70%）<div class="progress"><div class="bar" style="width:70%"></div></div></div>
+        <div>LaTeX（80%）<div class="progress"><div class="bar" style="width:80%"></div></div></div>
+        <div>PS（85%）<div class="progress"><div class="bar" style="width:85%"></div></div></div>
+        <div>PR（55%）<div class="progress"><div class="bar" style="width:55%"></div></div></div>
+        <div style="font-size:13px;color:var(--muted)">百分比仅作自评展示。</div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:16px">
+      <h3>代表论文</h3>
+      <ul class="pub">
+        <li>
+          <b>A Flexible Method for Estimating Luminosity Functions via Kernel Density Estimation. II. Generalization and Python Implementation</b><br />
+          Z. Yuan, X. Zhang, J. Wang, X. Cheng, W. Wang, <i>ApJS</i> <b>260</b>, 10 (2022).
+          <a href="https://iopscience.iop.org/article/10.3847/1538-4365/ac596a" target="_blank" rel="noopener">IOP</a> ·
+          <a href="https://arxiv.org/abs/2203.06700" target="_blank" rel="noopener">arXiv:2203.06700</a>
+        </li>
+        <li>
+          <b>Constraints on cosmic star formation history via a new modeling of the radio luminosity function of star-forming galaxies</b><br />
+          W. Wang, Z. Yuan, H. Yu, J. Mao, <i>A&amp;A</i> <b>683</b>, A174 (2024).
+          <a href="https://www.aanda.org/10.1051/0004-6361/202347746" target="_blank" rel="noopener">A&amp;A</a> ·
+          <a href="https://ui.adsabs.harvard.edu/abs/2024A%26A...683A.174W/abstract" target="_blank" rel="noopener">ADS</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card" style="margin-top:16px">
+      <h3>标签 / 兴趣</h3>
+      <p class="badges">
+        <a href="/tags/">Luminosity Function</a>
+        <a href="/tags/">KDE</a>
+        <a href="/tags/">Copula</a>
+        <a href="/tags/">MCMC</a>
+        <a href="/tags/">Radio SFG/AGN</a>
+      </p>
+    </section>
+
+    <footer>© 2025 Wenjie Wang</footer>
+  </main>
+</html>
+<style id="anim-fix">
+/* 背景容器 */
+.gradient-bg{
+  position:fixed; inset:0; z-index:0; overflow:hidden;
+  background:
+    radial-gradient(1000px 800px at 12% 12%, rgba(99,102,241,.08), transparent 60%),
+    radial-gradient(900px 700px  at 88% 8%,   rgba(16,185,129,.06), transparent 60%);
+}
+/* 彩色气泡 */
+.blob{
+  position:absolute; width:40vmax; height:40vmax; border-radius:50%;
+  filter:blur(60px) saturate(120%); opacity:.6; mix-blend-mode:screen;
+  animation: drift var(--t,38s) ease-in-out infinite alternate !important;
+}
+.blob.b1{ left:-12vmax; top:-10vmax; --t:36s;
+  background:radial-gradient(circle at 30% 30%, rgba(99,102,241,.85), transparent 60%);}
+.blob.b2{ right:-14vmax; top:-8vmax;  --t:44s;
+  background:radial-gradient(circle at 60% 40%, rgba(16,185,129,.85),  transparent 60%);}
+.blob.b3{ left:8vmax; bottom:-12vmax; --t:40s;
+  background:radial-gradient(circle at 50% 60%, rgba(59,130,246,.85),  transparent 60%);}
+.blob.b4{ right:6vmax; bottom:-10vmax; --t:48s;
+  background:radial-gradient(circle at 40% 50%, rgba(236,72,153,.80),  transparent 60%);}
+
+/* 关键帧（被破坏的就是这里） */
+@keyframes drift{
+  0%   { transform: translate(0,0)        scale(1);    }
+  50%  { transform: translate(6vmax,-4vmax) scale(1.06); }
+  100% { transform: translate(-5vmax,5vmax) scale(1.12); }
+}
+
+/* 深色模式稍微降亮 + 增模糊 */
+@media (prefers-color-scheme: dark){
+  .blob{ opacity:.55; filter:blur(80px) saturate(120%); }
+}
+
+/* === 背景动画 · 强制可见+大幅度+短周期（覆盖前面的设置） === */
+.gradient-bg{ z-index: 0 !important; pointer-events:none; }
+
+.blob{
+  /* 强制开启动画，并交给GPU做变换 */
+  animation: drift var(--t, 12s) ease-in-out infinite alternate !important;
+  will-change: transform;
+  mix-blend-mode: screen;
+  opacity: .62;
+  filter: blur(60px) saturate(120%);
+}
+
+/* 各气泡不同节奏（更明显） */
+.blob.b1{ --t: 15s !important; }
+.blob.b2{ --t: 16s !important; }
+.blob.b3{ --t: 18s !important; }
+.blob.b4{ --t: 19s !important; }
+
+/* 放大位移幅度，肉眼可见地漂移 */
+@keyframes drift{
+  /* 幅度从 ~14vmax → 28~26vmax，肉眼更明显 */
+  0%   { transform: translate(-28vmax,-20vmax) scale(1.00); }
+  50%  { transform: translate( 28vmax, 18vmax) scale(1.18); }
+  100% { transform: translate(-16vmax, 26vmax) scale(1.08); }
+}
+
+/* 若系统启用“减少动画”，也强制运行（兜底） */
+@media (prefers-reduced-motion: reduce){
+  .blob{ animation: drift var(--t, 12s) ease-in-out infinite alternate !important; }
+}
+
+/* 放大气泡尺寸 + 位移幅度 */
+.blob{ width: 52vmax !important; height: 52vmax !important; } /* 原来 40vmax，可再加大 */
+
+</style>
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>分类: VSCode | Wenjie Wang</title><meta name="author" content="Wenjie Wang"><meta name="copyright" content="Wenjie Wang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="海是倒过来的天">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wenjie Wang">
+<meta property="og:url" content="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/VSCode/index.html">
+<meta property="og:site_name" content="Wenjie Wang">
+<meta property="og:description" content="海是倒过来的天">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://wenjiew-astro.github.io/img/20250713102251.jpg">
+<meta property="article:author" content="Wenjie Wang">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wenjiew-astro.github.io/img/20250713102251.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/20250713102251.jpg"><link rel="canonical" href="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/VSCode/index.html"><link rel="preconnect" href="//unpkg.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://unpkg.com/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '分类: VSCode',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'category'
+}</script><script>
+(function () {
+  const html = document.documentElement
+  try {
+    const store = localStorage.getItem('theme')
+    // 只有当用户没手动切换过主题时，才跟随系统
+    if (!store) {
+      const dark = window.matchMedia('(prefers-color-scheme: dark)').matches
+      html.setAttribute('data-theme', dark ? 'dark' : 'light')
+      matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        if (!localStorage.getItem('theme')) {
+          html.setAttribute('data-theme', e.matches ? 'dark' : 'light')
+        }
+      })
+    }
+  } catch (e) {}
+})();
+</script>
+<link rel="stylesheet" href="/css/universe.css"><link rel="stylesheet" href="/css/xxx.css"><link rel="stylesheet" href="/css/mouse-stars.css"><link rel="stylesheet" href="/css/maoboli.css"><link rel="stylesheet" href="/css/fish.css"><link rel="stylesheet" href="/css/butterfly-typora-look-v8.1.hover.css"><link rel="stylesheet" href="https://cdn.staticfile.org/bootstrap/4.6.2/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css"><style>
+  .gallery-index, .ImageGrid { width: min(1200px, calc(100% - 32px)); margin: 12px auto 24px; }
+  .post-block:has(#galleryIndex){ background:transparent!important; box-shadow:none!important; padding:0!important; }
+  .post-title:has(+ .post-content #galleryIndex),
+  .post-meta:has(+ .post-content #galleryIndex),
+  .post-content:has(#galleryIndex) > *:not(#galleryIntro):not(#galleryIndex){ display:none!important; }
+
+  /* 引言容器样式（放大 + 增距 + 现代卡片效果） */
+  .gallery-intro {
+    /* 尺寸更大 */
+    width: min(2000px, calc(100% - 1px));
+    margin: -80px auto 44px;          /* ↑ 上 28px，↓ 下 44px：与下面内容拉开距离 */
+    padding: 22px 28px;
+
+    /* 排版与可读性 */
+    text-align: center;
+    font-size: 16px;                  /* 整体字更大 */
+    line-height: 1.9;
+
+    /* 背景与毛玻璃 */
+    background: rgb(166, 169, 175);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    /* 形状与投影 */
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+
+    /* 悬停动效（轻微上浮 + 放大） */
+    transform: translateY(0) scale(1);
+    transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+    will-change: transform;
+
+    position: relative;               /* 供 ::before 定位用 */
+  }
+
+  .gallery-intro:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.24);
+  }
+
+  /* 渐变边框（不遮住内容） */
+  .gallery-intro::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;                     /* 边框粗细 */
+    border-radius: inherit;
+    background: linear-gradient(135deg, #4facfe, #00f2fe, #f093fb, #f5576c);
+
+    /* 用蒙版把中间“挖空”，只显示边框 */
+    -webkit-mask: 
+      linear-gradient(#000 0 0) content-box, 
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+
+    pointer-events: none;
+    z-index: 0;
+  }
+
+
+
+  .gallery-index{ display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:22px; }
+  .gcard{ width:240px; cursor:pointer; user-select:none; transform-origin:50% 80%;
+          transition:transform .25s ease, filter .25s ease; filter:drop-shadow(0 10px 20px rgba(0,0,0,.18)); text-decoration:none; }
+  .gcard:hover{ transform:rotate(0deg) translateY(-6px) scale(1.02); filter:drop-shadow(0 14px 28px rgba(0,0,0,.22)); }
+  .gimg{ width:100%; height:150px; border-radius:12px; overflow:hidden; background:#111; }
+  .gimg img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .gmeta{ text-align:center; margin-top:8px; line-height:1.25; color:inherit; }
+  .gtitle{ font-weight:700; }
+  .gsub{ font-size:12px; opacity:.75; margin-top:4px; }
+  .tilt-1{ transform:rotate(-4deg) } .tilt-2{ transform:rotate(-2.5deg) }
+  .tilt-3{ transform:rotate(-1.5deg) } .tilt-4{ transform:rotate(1.5deg) }
+  .tilt-5{ transform:rotate(2.5deg) }  .tilt-6{ transform:rotate(4deg) }
+
+  .card{ border-radius:14px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,.08) }
+  .ImageInCard{ overflow:hidden; border-radius:14px }
+  .card img{ width:100%; height:100%; object-fit:cover; display:block }
+  .gallery-title{ width:min(1200px, calc(100% - 32px)); margin:16px auto 8px; font-weight:700; font-size:20px; }
+  /* 用伪元素显示我们设置的标题；把原文字隐藏掉 */
+  #page-header .dyn-title{ color: transparent !important; position: relative; }
+  #page-header .dyn-title::after{
+    content: attr(data-group);   /* 读取元素属性 data-group 作为标题 */
+    color: inherit;
+    position: absolute;
+    left: 0; top: 0;
+  }
+</style>
+<style> /* 让 nav 成为定位容器 */ #nav{position:relative;}
+/* 方案 A：适配大多数版本的菜单容器 */ #nav .menus_items{ position:absolute; left:50%; top:20%; transform:translateX(-50%); display:flex; gap:.1rem; white-space:nowrap; /* 避免被右侧按钮挤压 */ max-width:calc(100% - 240px); }
+/* 方案 B：部分版本菜单容器是 .menus */ #nav .menus{ display:flex !important; justify-content:center !important; width:100% !important; }
+/* 保留左右两侧布局（logo 左、右侧按钮在右） */ #nav .site-brand, #nav .brand, #nav .site-title{ position:relative; z-index:2; } #nav .right, #nav .right-menu{ position:relative; z-index:2; margin-left:auto; }
+/* 菜单项间距（可调） */ #nav .menus_items>li, #nav .menus>li{ margin:0 .5rem; } </style><link rel="stylesheet" href="/css/friends-matery.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css"><style id="music-bar-lower"> /* 仅把控制条整体往下挪一点 */ .aplayer .aplayer-controller{ transform:translateY(70px);   /* 数值越大越靠下，自己调 */ } /* 防止被裁切/挡住，给信息区留一点底部空间 */ .aplayer .aplayer-info{ padding-bottom:1px; } </style><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.2/assets/css/music.css" /><link rel="stylesheet" href="/css/categorybar.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Wenjie Wang" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/20250713102251.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa fa-brands fa-reddit"></i><span> 碎碎念</span></a></li><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/bangumi/"><i class="fa-fw fas fa-video"></i><span> 追番</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fa fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(/img/pexels-photograph-1252508.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Wenjie Wang</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa fa-brands fa-reddit"></i><span> 碎碎念</span></a></li><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/bangumi/"><i class="fa-fw fas fa-video"></i><span> 追番</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fa fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">VSCode</h1></div></header><main class="layout" id="content-inner"><div id="category"><div class="article-sort-title">分类 - VSCode</div><div class="article-sort"><div class="article-sort-item year">2025</div><div class="article-sort-item"><a class="article-sort-item-img" href="/2025/09/03/VSCode%20%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8/" title="VSCode 快捷键大全"><img src="/img/cover/17343650740161920.jpg" alt="VSCode 快捷键大全" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2025-09-02T16:00:00.000Z" title="发表于 2025-09-03 00:00:00">2025-09-03</time></div><a class="article-sort-item-title" href="/2025/09/03/VSCode%20%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8/" title="VSCode 快捷键大全">VSCode 快捷键大全</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2025/09/03/VSCode%20%E5%BF%AB%E9%80%9F%E6%8A%98%E5%8F%A0%E6%89%80%E6%9C%89%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9/" title="VSCode 快速折叠所有的文件夹"><img src="/img/cover/16777130876849536.jpg" alt="VSCode 快速折叠所有的文件夹" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2025-09-02T16:00:00.000Z" title="发表于 2025-09-03 00:00:00">2025-09-03</time></div><a class="article-sort-item-title" href="/2025/09/03/VSCode%20%E5%BF%AB%E9%80%9F%E6%8A%98%E5%8F%A0%E6%89%80%E6%9C%89%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9/" title="VSCode 快速折叠所有的文件夹">VSCode 快速折叠所有的文件夹</a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/20250713102251.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Wenjie Wang</div><div class="author-info-description">海是倒过来的天</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/wenjiew-astro"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/wenjiew-astro" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wenjiew001@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://blog.csdn.net/m0_66607857" target="_blank" title="CSDN"><i class="fa fa-book-open"></i></a><a class="social-icon" href="/img/wechat.png" target="_blank" title="WeChat"><i class="fab fa-weixin"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is Wenjie Wang's Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/09/05/%E8%A7%A3%E5%86%B3%20CDS%20FTP%20%E4%B8%8B%E8%BD%BD%E6%95%B0%E6%8D%AE%E6%97%B6%E6%8F%90%E7%A4%BA%E7%99%BB%E5%BD%95%E7%9A%84%E9%97%AE%E9%A2%98/" title="解决 CDS FTP 下载数据时提示登录的问题"><img src="/img/cover/17395614222634368.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="解决 CDS FTP 下载数据时提示登录的问题"/></a><div class="content"><a class="title" href="/2025/09/05/%E8%A7%A3%E5%86%B3%20CDS%20FTP%20%E4%B8%8B%E8%BD%BD%E6%95%B0%E6%8D%AE%E6%97%B6%E6%8F%90%E7%A4%BA%E7%99%BB%E5%BD%95%E7%9A%84%E9%97%AE%E9%A2%98/" title="解决 CDS FTP 下载数据时提示登录的问题">解决 CDS FTP 下载数据时提示登录的问题</a><time datetime="2025-09-05T03:03:01.000Z" title="发表于 2025-09-05 11:03:01">2025-09-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/09/04/hexo%E5%8D%9A%E6%96%87%E5%9B%BE%E7%89%87%E5%8F%8A%E4%B8%8ETypora%E4%B8%80%E8%87%B4/" title="hexo博文图片及与Typora一致"><img src="/img/cover/16780926953180544.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo博文图片及与Typora一致"/></a><div class="content"><a class="title" href="/2025/09/04/hexo%E5%8D%9A%E6%96%87%E5%9B%BE%E7%89%87%E5%8F%8A%E4%B8%8ETypora%E4%B8%80%E8%87%B4/" title="hexo博文图片及与Typora一致">hexo博文图片及与Typora一致</a><time datetime="2025-09-04T01:41:52.000Z" title="发表于 2025-09-04 09:41:52">2025-09-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/09/03/VSCode%20%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8/" title="VSCode 快捷键大全"><img src="/img/cover/17343650740161920.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="VSCode 快捷键大全"/></a><div class="content"><a class="title" href="/2025/09/03/VSCode%20%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8/" title="VSCode 快捷键大全">VSCode 快捷键大全</a><time datetime="2025-09-02T16:00:00.000Z" title="发表于 2025-09-03 00:00:00">2025-09-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/09/03/VSCode%20%E5%BF%AB%E9%80%9F%E6%8A%98%E5%8F%A0%E6%89%80%E6%9C%89%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9/" title="VSCode 快速折叠所有的文件夹"><img src="/img/cover/16777130876849536.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="VSCode 快速折叠所有的文件夹"/></a><div class="content"><a class="title" href="/2025/09/03/VSCode%20%E5%BF%AB%E9%80%9F%E6%8A%98%E5%8F%A0%E6%89%80%E6%9C%89%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9/" title="VSCode 快速折叠所有的文件夹">VSCode 快速折叠所有的文件夹</a><time datetime="2025-09-02T16:00:00.000Z" title="发表于 2025-09-03 00:00:00">2025-09-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/09/01/hexo%E9%85%8D%E7%BD%AE%E5%8F%8B%E9%93%BE/" title="hexo配置友链"><img src="/img/cover/17261277366635904.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo配置友链"/></a><div class="content"><a class="title" href="/2025/09/01/hexo%E9%85%8D%E7%BD%AE%E5%8F%8B%E9%93%BE/" title="hexo配置友链">hexo配置友链</a><time datetime="2025-08-31T16:00:00.000Z" title="发表于 2025-09-01 00:00:00">2025-09-01</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+      <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/"><span class="card-category-list-name">教程</span><span class="card-category-list-count">12</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/Github/"><span class="card-category-list-name">Github</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/Hexo/"><span class="card-category-list-name">Hexo</span><span class="card-category-list-count">8</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/Hexo/Typora/"><span class="card-category-list-name">Typora</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/Latex/"><span class="card-category-list-name">Latex</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/VSCode/"><span class="card-category-list-name">VSCode</span><span class="card-category-list-count">2</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%A7%91%E7%A0%94/"><span class="card-category-list-name">科研</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%A7%91%E7%A0%94/%E5%B7%A5%E5%85%B7/"><span class="card-category-list-name">工具</span><span class="card-category-list-count">1</span></a></li></ul></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.5em; color: #99a9bf">教程</a> <a href="/tags/Hexo/" style="font-size: 1.37em; color: #99a4b2">Hexo</a> <a href="/tags/Latex/" style="font-size: 1.1em; color: #999">Latex</a> <a href="/tags/Typora/" style="font-size: 1.1em; color: #999">Typora</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1.1em; color: #999">笔记</a> <a href="/tags/%E7%A7%91%E7%A0%94/" style="font-size: 1.1em; color: #999">科研</a> <a href="/tags/Github%E4%B8%BB%E9%A1%B5/" style="font-size: 1.23em; color: #999ea6">Github主页</a> <a href="/tags/VSCode/" style="font-size: 1.23em; color: #999ea6">VSCode</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.23em; color: #999ea6">博客</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/09/">
+            <span class="card-archive-list-date">
+              九月 2025
+            </span>
+            <span class="card-archive-list-count">8</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/08/">
+            <span class="card-archive-list-date">
+              八月 2025
+            </span>
+            <span class="card-archive-list-count">5</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/07/">
+            <span class="card-archive-list-date">
+              七月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">14</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">22k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-09-05T03:18:45.201Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"></div><div class="footer_custom_text"><div style="margin:12px auto;text-align:center;width:250px;height:250px;">
+  <style>#clustrmaps-globe-wrap canvas{width:100%!important;height:100%!important;display:block;margin:0 auto}</style>
+  <div id="clustrmaps-globe-wrap" style="width:100%;height:100%;">
+    <script type="text/javascript" id="clstr_globe"
+      src="https://clustrmaps.com/globe.js?d=hWY0rcgLrsJtJiWcBpZUiTIjqXf-fmEyBJCo2rCha8I">
+    </script>
+  </div>
+</div> ©2025 <span class="heart-beat" role="img" aria-label="love">❤️</span> Wenjie Wang<br> 框架 Hexo 7.3.0 | 主题 Butterfly 5.4.2<br> <span id="realtime_duration"></span>
+</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><div id="jsi-flying-fish-container" class="fish-container"></div><script defer src="/js/fish-renderer.js"></script><script> document.addEventListener('DOMContentLoaded', () => { window.FISH_RENDERER && window.FISH_RENDERER.init(); }); document.addEventListener('pjax:complete',     () => { window.FISH_RENDERER && window.FISH_RENDERER.init(); }); </script><canvas id="mouse-stars"></canvas><script defer src="/js/mouse-stars.js"></script><script> document.addEventListener('DOMContentLoaded',  () => { window.MOUSE_STARS && window.MOUSE_STARS.init(); }); document.addEventListener('pjax:complete',     () => { window.MOUSE_STARS && window.MOUSE_STARS.init(); }); </script><script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js"></script><script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/duration.min.js"></script><script src="/scripts/realtime.js"></script><script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script><script src="https://cdn.staticfile.org/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script><script src="https://gcore.jsdelivr.net/npm/minigrid@3.1.1/dist/minigrid.min.js"></script><script src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js"></script><script defer src="/js/gallery-index.js"></script><script defer src="/js/gallery-group.js"></script><script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=hWY0rcgLrsJtJiWcBpZUiTIjqXf-fmEyBJCo2rCha8I"></script><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="今天想搜点什么？" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><script async data-pjax src="https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.2/assets/js/music.js"></script><script data-pjax>
+  function butterfly_categories_card_injector_config(){
+    // 检查容器是否存在
+    var parent_div_git = document.getElementById('recent-posts');
+    // 如果容器不存在，则动态创建
+    if (!parent_div_git) {
+      console.warn('butterfly_categories_card: 挂载容器不存在，正在动态创建...');
+      // 创建新容器（默认插入到页面主体顶部）
+      parent_div_git = document.createElement('div');
+      parent_div_git.id = 'recent-posts'; // 赋予配置的ID
+      document.querySelector('#page').prepend(parent_div_git); // 插入到 #content-inner 内
+    }
+    var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 950px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 800px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(/img/cover/16777130876849536.jpg);"> <a class="categoryBar-list-link" href="/categories/教程/">教程</a><span class="categoryBar-list-count">12</span><span class="categoryBar-list-descr">1</span></li><li class="categoryBar-list-item" style="background:url(/img/cover/17169476570893696.jpg);"> <a class="categoryBar-list-link" href="/categories/教程/VSCode/">VSCode</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr">2</span></li><li class="categoryBar-list-item" style="background:url(/img/cover/17226422133902720.jpg);"> <a class="categoryBar-list-link" href="/categories/教程/Hexo/">Hexo</a><span class="categoryBar-list-count">8</span><span class="categoryBar-list-descr">3</span></li><li class="categoryBar-list-item" style="background:url(/img/cover/17231683527757184.jpg);"> <a class="categoryBar-list-link" href="/categories/教程/Github/">Github</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">4</span></li><li class="categoryBar-list-item" style="background:url(/img/cover/17261277366635904.jpg);"> <a class="categoryBar-list-link" href="/categories/教程/Latex/">Latex</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">5</span></li><li class="categoryBar-list-item" style="background:url(/img/cover/17367140004646272.jpg);"> <a class="categoryBar-list-link" href="/categories/科研/">科研</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">6</span></li><li class="categoryBar-list-item" style="background:url(/img/cover/17209650165108096.jpg);"> <a class="categoryBar-list-link" href="/categories/教程/Hexo/Typora/">Typora</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">7</span></li><li class="categoryBar-list-item" style="background:url(/img/cover/17394320621424000.jpg);"> <a class="categoryBar-list-link" href="/categories/科研/工具/">工具</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">8</span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" href="/categories/科研/工具/笔记/">笔记</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li></ul></div></div>';
+    console.log('已挂载 butterfly_categories_card');
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+  }
+  // 路径匹配逻辑（使用 startsWith）
+  if (location.pathname.startsWith('/categories/') || '/categories/' === 'all') {
+    butterfly_categories_card_injector_config();
+  }
+  </script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html>
