@@ -79,6 +79,34 @@
   </entry>
   
   <entry>
+    <title>VSCode 快速折叠所有的文件夹</title>
+    <link href="https://wenjiew-astro.github.io/2025/09/03/VSCode%20%E5%BF%AB%E9%80%9F%E6%8A%98%E5%8F%A0%E6%89%80%E6%9C%89%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
+    <id>https://wenjiew-astro.github.io/2025/09/03/VSCode%20%E5%BF%AB%E9%80%9F%E6%8A%98%E5%8F%A0%E6%89%80%E6%9C%89%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9/</id>
+    <published>2025-09-02T16:00:00.000Z</published>
+    <updated>2025-09-04T02:16:51.898Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="VSCode-快速折叠所有的文件夹"><a href="#VSCode-快速折叠所有的文件夹" class="headerlink" title="VSCode 快速折叠所有的文件夹"></a>VSCode 快速折叠所有的文件夹</h1><p><strong>遇到的问题</strong><br>在写代码的时候，会打开很多文件夹，但是开的文件夹很多的话又很烦，所以想折叠所有文件夹</p><blockquote><p>我在网上也找过快捷键，但是网上的 <code>ctrl + k  ctrl + 0</code> 折叠，<code>ctrl + k  ctrl + j</code> 展开并没有作用。</p></blockquote><p><strong>找到的另一个解决方案</strong><br><code>看红色的箭头，点击这个会快速折叠所有文件夹！</code></p><img src="/2025/09/03/VSCode%20%E5%BF%AB%E9%80%9F%E6%8A%98%E5%8F%A0%E6%89%80%E6%9C%89%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9/image.png" class="">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;VSCode-快速折叠所有的文件夹&quot;&gt;&lt;a href=&quot;#VSCode-快速折叠所有的文件夹&quot; class=&quot;headerlink&quot; title=&quot;VSCode 快速折叠所有的文件夹&quot;&gt;&lt;/a&gt;VSCode 快速折叠所有的文件夹&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;遇到</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="VSCode" scheme="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/VSCode/"/>
+    
+    
+    <category term="VSCode" scheme="https://wenjiew-astro.github.io/tags/VSCode/"/>
+    
+    <category term="教程" scheme="https://wenjiew-astro.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>VSCode 快捷键大全</title>
     <link href="https://wenjiew-astro.github.io/2025/09/03/VSCode%20%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8/"/>
     <id>https://wenjiew-astro.github.io/2025/09/03/VSCode%20%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8/</id>
@@ -101,37 +129,37 @@
     <category term="VSCode" scheme="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/VSCode/"/>
     
     
-    <category term="教程" scheme="https://wenjiew-astro.github.io/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="VSCode" scheme="https://wenjiew-astro.github.io/tags/VSCode/"/>
+    
+    <category term="教程" scheme="https://wenjiew-astro.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
-    <title>VSCode 快速折叠所有的文件夹</title>
-    <link href="https://wenjiew-astro.github.io/2025/09/03/VSCode%20%E5%BF%AB%E9%80%9F%E6%8A%98%E5%8F%A0%E6%89%80%E6%9C%89%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
-    <id>https://wenjiew-astro.github.io/2025/09/03/VSCode%20%E5%BF%AB%E9%80%9F%E6%8A%98%E5%8F%A0%E6%89%80%E6%9C%89%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9/</id>
-    <published>2025-09-02T16:00:00.000Z</published>
-    <updated>2025-09-04T02:16:51.898Z</updated>
+    <title>hexo配置安知鱼音乐页面</title>
+    <link href="https://wenjiew-astro.github.io/2025/09/01/hexo%E9%85%8D%E7%BD%AE%E5%AE%89%E7%9F%A5%E9%B1%BC%E9%9F%B3%E4%B9%90%E9%A1%B5%E9%9D%A2/"/>
+    <id>https://wenjiew-astro.github.io/2025/09/01/hexo%E9%85%8D%E7%BD%AE%E5%AE%89%E7%9F%A5%E9%B1%BC%E9%9F%B3%E4%B9%90%E9%A1%B5%E9%9D%A2/</id>
+    <published>2025-08-31T16:00:00.000Z</published>
+    <updated>2025-09-01T13:41:41.775Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="VSCode-快速折叠所有的文件夹"><a href="#VSCode-快速折叠所有的文件夹" class="headerlink" title="VSCode 快速折叠所有的文件夹"></a>VSCode 快速折叠所有的文件夹</h1><p><strong>遇到的问题</strong><br>在写代码的时候，会打开很多文件夹，但是开的文件夹很多的话又很烦，所以想折叠所有文件夹</p><blockquote><p>我在网上也找过快捷键，但是网上的 <code>ctrl + k  ctrl + 0</code> 折叠，<code>ctrl + k  ctrl + j</code> 展开并没有作用。</p></blockquote><p><strong>找到的另一个解决方案</strong><br><code>看红色的箭头，点击这个会快速折叠所有文件夹！</code></p><img src="/2025/09/03/VSCode%20%E5%BF%AB%E9%80%9F%E6%8A%98%E5%8F%A0%E6%89%80%E6%9C%89%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9/image.png" class="">]]></content>
+    <content type="html"><![CDATA[<h1 id="hexo配置安知鱼音乐页面"><a href="#hexo配置安知鱼音乐页面" class="headerlink" title="hexo配置安知鱼音乐页面"></a>hexo配置安知鱼音乐页面</h1><p>用现成的 <code>hexo-anzhiyu-music</code> 适配脚本，样式、布局。</p><p><strong>1）安装脚本</strong></p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 在博客根目录执行</span><br><span class="line"></span><br><span class="line">npm i hexo-anzhiyu-music --save</span><br></pre></td></tr></table></figure><p> <strong>2）在站点配置或主题配置里加上：</strong></p><p> （任选其一：<code>_config.yml</code> 或 <code>_config.butterfly.yml</code>）</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 音乐馆</span><br><span class="line">anzhiyu_music:</span><br><span class="line">  enable: true</span><br><span class="line">  id: &quot;826250135&quot;    # 你的网易云歌单ID</span><br><span class="line">  server: netease</span><br><span class="line">  customJS:</span><br><span class="line">  customCSS:</span><br><span class="line">  front_matter: |</span><br><span class="line">    title: 音乐馆</span><br><span class="line">    type: music</span><br><span class="line">    aplayer: true</span><br><span class="line">    top_img: false</span><br><span class="line">    comments: false</span><br><span class="line">    aside: false</span><br></pre></td></tr></table></figure><p> <strong>3）用 Butterfly 的 <code>inject</code> 注入 APlayer 和 Meting2（关键）</strong></p><p>打开 <code>themes/butterfly/_config.yml</code>，增加（或合并到你自己的 inject）：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">inject:</span><br><span class="line">  head:</span><br><span class="line">    - &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css&quot;&gt;</span><br><span class="line">  bottom:</span><br><span class="line">    - &lt;script src=&quot;https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    - &lt;script src=&quot;https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><blockquote><p> 备用镜像（万一被墙&#x2F;抽风）：</p><ul><li><code>https://cdn.jsdelivr.net/npm/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js</code></li><li><code>https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js</code></li><li><code>https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css</code></li></ul></blockquote><p> <strong>4）新建页面（如果还没建）：</strong></p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page music</span><br></pre></td></tr></table></figure><p>把 <code>source/music/index.md</code> 写成如下这样：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 音乐馆</span><br><span class="line">type: music</span><br><span class="line">comments: false</span><br><span class="line">aside: false</span><br><span class="line">aplayer: true</span><br><span class="line">top_img: false</span><br><span class="line"># 如果你开了 pjax，强烈建议关掉，否则可能不执行初始化</span><br><span class="line">pjax: false</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;meting-js</span><br><span class="line">  server=&quot;netease&quot;</span><br><span class="line">  type=&quot;playlist&quot;</span><br><span class="line">  id=&quot;826250135&quot;</span><br><span class="line">  fixed=&quot;false&quot;</span><br><span class="line">  autoplay=&quot;false&quot;</span><br><span class="line">  order=&quot;list&quot;</span><br><span class="line">  list-folded=&quot;false&quot;</span><br><span class="line">  lrc-type=&quot;1&quot;&gt;</span><br><span class="line">&lt;/meting-js&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p> 然后：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure><p><strong>5）问题：发现这样进度条有点高，可以使用下面这样的方案解决</strong></p><p>在 <code>themes/butterfly/_config.yml</code> 里，把之前我让你加的 <code>&lt;style id=&quot;music-fix&quot;&gt;...&lt;/style&gt;</code> 删除；然后在 <code>inject.head</code> 里加入这段极简样式：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">inject:</span><br><span class="line">head:</span><br><span class="line">    - &lt;style id=&quot;music-bar-lower&quot;&gt;</span><br><span class="line">        /* 仅把控制条整体往下挪一点 */</span><br><span class="line">        .aplayer .aplayer-controller&#123;</span><br><span class="line">          transform: translateY(12px);   /* 数值越大越靠下，自己调 */</span><br><span class="line">        &#125;</span><br><span class="line">        /* 防止被裁切/挡住，给信息区留一点底部空间 */</span><br><span class="line">        .aplayer .aplayer-info&#123;</span><br><span class="line">          padding-bottom: 12px;</span><br><span class="line">        &#125;</span><br><span class="line">      &lt;/style&gt;</span><br></pre></td></tr></table></figure><p>想再低一点，就把 <code>12px</code> 调成 <code>16px / 20px</code> 试试；不影响歌词样式，也不会改进度条的粗细。</p><blockquote><p><strong>但是还有一个遗留问题，歌词滚动不正常，暂时没有更好的解决方案，就先这样吧，之后有时间再解决一下！！</strong></p></blockquote>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;VSCode-快速折叠所有的文件夹&quot;&gt;&lt;a href=&quot;#VSCode-快速折叠所有的文件夹&quot; class=&quot;headerlink&quot; title=&quot;VSCode 快速折叠所有的文件夹&quot;&gt;&lt;/a&gt;VSCode 快速折叠所有的文件夹&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;遇到</summary>
+    <summary type="html">&lt;h1 id=&quot;hexo配置安知鱼音乐页面&quot;&gt;&lt;a href=&quot;#hexo配置安知鱼音乐页面&quot; class=&quot;headerlink&quot; title=&quot;hexo配置安知鱼音乐页面&quot;&gt;&lt;/a&gt;hexo配置安知鱼音乐页面&lt;/h1&gt;&lt;p&gt;用现成的 &lt;code&gt;hexo-anzhiyu-mu</summary>
       
     
     
     
     <category term="教程" scheme="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/"/>
     
-    <category term="VSCode" scheme="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/VSCode/"/>
+    <category term="Hexo" scheme="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/Hexo/"/>
     
     
     <category term="教程" scheme="https://wenjiew-astro.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
-    <category term="VSCode" scheme="https://wenjiew-astro.github.io/tags/VSCode/"/>
+    <category term="Hexo" scheme="https://wenjiew-astro.github.io/tags/Hexo/"/>
     
   </entry>
   
@@ -226,34 +254,6 @@
   </entry>
   
   <entry>
-    <title>hexo配置安知鱼音乐页面</title>
-    <link href="https://wenjiew-astro.github.io/2025/09/01/hexo%E9%85%8D%E7%BD%AE%E5%AE%89%E7%9F%A5%E9%B1%BC%E9%9F%B3%E4%B9%90%E9%A1%B5%E9%9D%A2/"/>
-    <id>https://wenjiew-astro.github.io/2025/09/01/hexo%E9%85%8D%E7%BD%AE%E5%AE%89%E7%9F%A5%E9%B1%BC%E9%9F%B3%E4%B9%90%E9%A1%B5%E9%9D%A2/</id>
-    <published>2025-08-31T16:00:00.000Z</published>
-    <updated>2025-09-01T13:41:41.775Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="hexo配置安知鱼音乐页面"><a href="#hexo配置安知鱼音乐页面" class="headerlink" title="hexo配置安知鱼音乐页面"></a>hexo配置安知鱼音乐页面</h1><p>用现成的 <code>hexo-anzhiyu-music</code> 适配脚本，样式、布局。</p><p><strong>1）安装脚本</strong></p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 在博客根目录执行</span><br><span class="line"></span><br><span class="line">npm i hexo-anzhiyu-music --save</span><br></pre></td></tr></table></figure><p> <strong>2）在站点配置或主题配置里加上：</strong></p><p> （任选其一：<code>_config.yml</code> 或 <code>_config.butterfly.yml</code>）</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 音乐馆</span><br><span class="line">anzhiyu_music:</span><br><span class="line">  enable: true</span><br><span class="line">  id: &quot;826250135&quot;    # 你的网易云歌单ID</span><br><span class="line">  server: netease</span><br><span class="line">  customJS:</span><br><span class="line">  customCSS:</span><br><span class="line">  front_matter: |</span><br><span class="line">    title: 音乐馆</span><br><span class="line">    type: music</span><br><span class="line">    aplayer: true</span><br><span class="line">    top_img: false</span><br><span class="line">    comments: false</span><br><span class="line">    aside: false</span><br></pre></td></tr></table></figure><p> <strong>3）用 Butterfly 的 <code>inject</code> 注入 APlayer 和 Meting2（关键）</strong></p><p>打开 <code>themes/butterfly/_config.yml</code>，增加（或合并到你自己的 inject）：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">inject:</span><br><span class="line">  head:</span><br><span class="line">    - &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css&quot;&gt;</span><br><span class="line">  bottom:</span><br><span class="line">    - &lt;script src=&quot;https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    - &lt;script src=&quot;https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><blockquote><p> 备用镜像（万一被墙&#x2F;抽风）：</p><ul><li><code>https://cdn.jsdelivr.net/npm/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js</code></li><li><code>https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js</code></li><li><code>https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css</code></li></ul></blockquote><p> <strong>4）新建页面（如果还没建）：</strong></p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page music</span><br></pre></td></tr></table></figure><p>把 <code>source/music/index.md</code> 写成如下这样：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 音乐馆</span><br><span class="line">type: music</span><br><span class="line">comments: false</span><br><span class="line">aside: false</span><br><span class="line">aplayer: true</span><br><span class="line">top_img: false</span><br><span class="line"># 如果你开了 pjax，强烈建议关掉，否则可能不执行初始化</span><br><span class="line">pjax: false</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;meting-js</span><br><span class="line">  server=&quot;netease&quot;</span><br><span class="line">  type=&quot;playlist&quot;</span><br><span class="line">  id=&quot;826250135&quot;</span><br><span class="line">  fixed=&quot;false&quot;</span><br><span class="line">  autoplay=&quot;false&quot;</span><br><span class="line">  order=&quot;list&quot;</span><br><span class="line">  list-folded=&quot;false&quot;</span><br><span class="line">  lrc-type=&quot;1&quot;&gt;</span><br><span class="line">&lt;/meting-js&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p> 然后：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure><p><strong>5）问题：发现这样进度条有点高，可以使用下面这样的方案解决</strong></p><p>在 <code>themes/butterfly/_config.yml</code> 里，把之前我让你加的 <code>&lt;style id=&quot;music-fix&quot;&gt;...&lt;/style&gt;</code> 删除；然后在 <code>inject.head</code> 里加入这段极简样式：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">inject:</span><br><span class="line">head:</span><br><span class="line">    - &lt;style id=&quot;music-bar-lower&quot;&gt;</span><br><span class="line">        /* 仅把控制条整体往下挪一点 */</span><br><span class="line">        .aplayer .aplayer-controller&#123;</span><br><span class="line">          transform: translateY(12px);   /* 数值越大越靠下，自己调 */</span><br><span class="line">        &#125;</span><br><span class="line">        /* 防止被裁切/挡住，给信息区留一点底部空间 */</span><br><span class="line">        .aplayer .aplayer-info&#123;</span><br><span class="line">          padding-bottom: 12px;</span><br><span class="line">        &#125;</span><br><span class="line">      &lt;/style&gt;</span><br></pre></td></tr></table></figure><p>想再低一点，就把 <code>12px</code> 调成 <code>16px / 20px</code> 试试；不影响歌词样式，也不会改进度条的粗细。</p><blockquote><p><strong>但是还有一个遗留问题，歌词滚动不正常，暂时没有更好的解决方案，就先这样吧，之后有时间再解决一下！！</strong></p></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;hexo配置安知鱼音乐页面&quot;&gt;&lt;a href=&quot;#hexo配置安知鱼音乐页面&quot; class=&quot;headerlink&quot; title=&quot;hexo配置安知鱼音乐页面&quot;&gt;&lt;/a&gt;hexo配置安知鱼音乐页面&lt;/h1&gt;&lt;p&gt;用现成的 &lt;code&gt;hexo-anzhiyu-mu</summary>
-      
-    
-    
-    
-    <category term="教程" scheme="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Hexo" scheme="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/Hexo/"/>
-    
-    
-    <category term="教程" scheme="https://wenjiew-astro.github.io/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Hexo" scheme="https://wenjiew-astro.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>LaTeX 如何用 .bib 插入参考文献：从入门到入土（含完整示例）</title>
     <link href="https://wenjiew-astro.github.io/2025/08/31/LaTeX%20%E5%A6%82%E4%BD%95%E7%94%A8%20.bib%20%E6%8F%92%E5%85%A5%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%EF%BC%9A%E4%BB%8E%200%20%E5%88%B0%E5%8F%91%E5%B8%83%EF%BC%88%E5%90%AB%E5%AE%8C%E6%95%B4%E7%A4%BA%E4%BE%8B%EF%BC%89/"/>
     <id>https://wenjiew-astro.github.io/2025/08/31/LaTeX%20%E5%A6%82%E4%BD%95%E7%94%A8%20.bib%20%E6%8F%92%E5%85%A5%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%EF%BC%9A%E4%BB%8E%200%20%E5%88%B0%E5%8F%91%E5%B8%83%EF%BC%88%E5%90%AB%E5%AE%8C%E6%95%B4%E7%A4%BA%E4%BE%8B%EF%BC%89/</id>
@@ -306,9 +306,9 @@
     <category term="Hexo" scheme="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/Hexo/"/>
     
     
-    <category term="Github主页" scheme="https://wenjiew-astro.github.io/tags/Github%E4%B8%BB%E9%A1%B5/"/>
-    
     <category term="教程" scheme="https://wenjiew-astro.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Github主页" scheme="https://wenjiew-astro.github.io/tags/Github%E4%B8%BB%E9%A1%B5/"/>
     
   </entry>
   
