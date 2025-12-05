@@ -6,7 +6,7 @@
   <link href="https://wenjiew-astro.github.io/atom.xml" rel="self"/>
   
   <link href="https://wenjiew-astro.github.io/"/>
-  <updated>2025-09-05T03:15:04.042Z</updated>
+  <updated>2025-12-05T08:45:42.076Z</updated>
   <id>https://wenjiew-astro.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>谷歌gemini乱码解决方案</title>
+    <link href="https://wenjiew-astro.github.io/2025/12/05/%E8%B0%B7%E6%AD%8Cgemini%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>https://wenjiew-astro.github.io/2025/12/05/%E8%B0%B7%E6%AD%8Cgemini%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</id>
+    <published>2025-12-04T16:00:00.000Z</published>
+    <updated>2025-12-05T08:45:42.076Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="谷歌gemini乱码解决方案"><a href="#谷歌gemini乱码解决方案" class="headerlink" title="谷歌gemini乱码解决方案"></a>谷歌gemini乱码解决方案</h1><blockquote><p>问题描述：网页版Gemini打开经常出现这些乱码文字，浏览器用edge和chrom都试过，还是无法解决，乱码情况如下</p></blockquote><p>一般认为这个是梯子或者DNS有问题，网上教程说是在clash规则中添加一个直连的网址，但是我试过了，没有用。</p><p>下面是我无意中找到的解决方案，事情的起因是因为我Linux登录谷歌的时候人机验证不显示，所以为了解决这个问题，下载了插件，导入了一些相关内容，居然无意中修好了Gemini的bug。下面是详细操作：</p><p>1，打开电脑自带的微软浏览器，转到浏览器右上角设置 &gt; 扩展 &gt; 打开 Microsoft Edge 外接程序网站，安装扩展工具。</p><p>2，搜索安装 <a href="https://he.firefoxcn.net/">Header Editor</a> 扩展插件，它支持 reCAPTCHA 镜像服务，能管理浏览器请求，包括修改请求头和响应头、重定向请求、取消请求。</p><p>3，打开右上角的扩展，在工具栏调出 Header Editor 扩展插件。</p><p>4，配置 Header Editor 扩展插件，转到管理 &gt; 导入和导出，输入 github 的地址，点击下载按钮导入下载规则，规则包括 Google APIs，reCaptcha 和 Content Security。</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://azurezeng.github.io/static/HE-GoogleRedirect.json</span><br></pre></td></tr></table></figure><p>5，最后保存下载规则，就成功配置 Header Editor 扩展插件了。刷新Gemini页面就会看到一切都恢复了。</p><p>大功告成，成果展示：</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;谷歌gemini乱码解决方案&quot;&gt;&lt;a href=&quot;#谷歌gemini乱码解决方案&quot; class=&quot;headerlink&quot; title=&quot;谷歌gemini乱码解决方案&quot;&gt;&lt;/a&gt;谷歌gemini乱码解决方案&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;问题描述：网页版G</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Windows" scheme="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/Windows/"/>
+    
+    
+    <category term="教程" scheme="https://wenjiew-astro.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Windows" scheme="https://wenjiew-astro.github.io/tags/Windows/"/>
+    
+  </entry>
   
   <entry>
     <title>解决 CDS FTP 下载数据时提示登录的问题</title>
@@ -278,37 +307,6 @@
     <category term="教程" scheme="https://wenjiew-astro.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="Latex" scheme="https://wenjiew-astro.github.io/tags/Latex/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vercel 托管 Github page</title>
-    <link href="https://wenjiew-astro.github.io/2025/08/28/Vercel%20%E6%89%98%E7%AE%A1%20Github%20page/"/>
-    <id>https://wenjiew-astro.github.io/2025/08/28/Vercel%20%E6%89%98%E7%AE%A1%20Github%20page/</id>
-    <published>2025-08-27T16:00:00.000Z</published>
-    <updated>2025-08-28T07:39:57.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>Vercel 是一个为开发者提供工具、工作流和基础设施的平台，可以让你更快地构建和部署你的 Web 应用，而无需额外的配置。</p></blockquote><p>vercel官网：<a href="https://link.juejin.cn/?target=https://vercel.com/">vercel.com&#x2F;</a>，可以直接使用github账号登录。</p><h1 id="Vercel-托管-Github-page"><a href="#Vercel-托管-Github-page" class="headerlink" title="Vercel 托管 Github page"></a>Vercel 托管 Github page</h1><h2 id="Vercel-直接托管“纯静态仓库”（不构建，最省事）"><a href="#Vercel-直接托管“纯静态仓库”（不构建，最省事）" class="headerlink" title="Vercel 直接托管“纯静态仓库”（不构建，最省事）"></a>Vercel 直接托管“纯静态仓库”（不构建，最省事）</h2><p>你的GitHub仓库里只有已经生成好的静态文件，就让 Vercel  <strong>不执行构建</strong> ，只把指定目录当站点根。</p><ol><li>在 Vercel → <strong>Add New → Project → Import Git Repository</strong> 选你的仓库。</li><li>在 “Configure Project” 里：<ul><li><strong>Framework Preset</strong> ：<code>Other</code></li><li><strong>Install Command</strong> ：留空</li><li><strong>Build Command</strong> ：留空（很关键，表示不构建）</li><li><strong>Output Directory</strong> ：</li><li>如果  <strong>静态文件在仓库根</strong> （<code>index.html</code> 在根）：填 <code>.</code></li><li>如果  <strong>静态文件在仓库的 <code>public/</code> 子目录</strong> ：填 <code>public</code></li></ul></li><li>点 <strong>Deploy</strong> 就完成了。以后你只要继续往这个仓库推送静态文件，Vercel 会自动发布。</li></ol><blockquote><p>你现在 GitHub Pages 是个人主页（根路径 <code>/</code>），如果你的仓库根就是这些文件，<strong>Output 直接填 <code>.</code></strong> 就行。</p></blockquote><h2 id="GitHub-Actions：检测到你推“静态仓库”就自动发-Vercel"><a href="#GitHub-Actions：检测到你推“静态仓库”就自动发-Vercel" class="headerlink" title="GitHub Actions：检测到你推“静态仓库”就自动发 Vercel"></a>GitHub Actions：检测到你推“静态仓库”就自动发 Vercel</h2><p>如果你仍把<strong>静态文件推到 GitHub</strong>，可以加个极简工作流，让它自动把仓库内容部署到 Vercel（不构建）。</p><p>在仓库中新增 <code>.github/workflows/deploy-vercel.yml</code>：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">name: Deploy static to Vercel (no build)</span><br><span class="line"></span><br><span class="line">on:</span><br><span class="line">  push:</span><br><span class="line">    branches: [ main ]</span><br><span class="line">  workflow_dispatch:</span><br><span class="line"></span><br><span class="line">jobs:</span><br><span class="line">  deploy:</span><br><span class="line">    runs-on: ubuntu-latest</span><br><span class="line">    steps:</span><br><span class="line">      - uses: actions/checkout@v4</span><br><span class="line"></span><br><span class="line">      - name: Install Vercel CLI</span><br><span class="line">        run: npm i -g vercel@latest</span><br><span class="line"></span><br><span class="line">      - name: Pull Vercel project settings</span><br><span class="line">        run: vercel pull --yes --environment=production --token $&#123;&#123; secrets.VERCEL_TOKEN &#125;&#125;</span><br><span class="line">        env:</span><br><span class="line">          VERCEL_ORG_ID: $&#123;&#123; secrets.VERCEL_ORG_ID &#125;&#125;</span><br><span class="line">          VERCEL_PROJECT_ID: $&#123;&#123; secrets.VERCEL_PROJECT_ID &#125;&#125;</span><br><span class="line"></span><br><span class="line">      # 如果你的静态文件在仓库根，改成 &quot;vercel deploy .&quot;</span><br><span class="line">      - name: Deploy current repo as static site</span><br><span class="line">        run: vercel deploy public --prod --yes --token $&#123;&#123; secrets.VERCEL_TOKEN &#125;&#125;</span><br><span class="line">        env:</span><br><span class="line">          VERCEL_ORG_ID: $&#123;&#123; secrets.VERCEL_ORG_ID &#125;&#125;</span><br><span class="line">          VERCEL_PROJECT_ID: $&#123;&#123; secrets.VERCEL_PROJECT_ID &#125;&#125;</span><br></pre></td></tr></table></figure><p>在 GitHub → Settings → Secrets and variables → Actions 新增 3 个机密：</p><ul><li><code>VERCEL_TOKEN</code>（Vercel 账户里创建的 access token）</li><li><code>VERCEL_ORG_ID</code>、<code>VERCEL_PROJECT_ID</code>（在对应项目的 Settings 里能看到）</li></ul><blockquote><p>如果你的仓库根就是静态站点，把 <code>vercel deploy public</code> 改为 <code>vercel deploy .</code>。</p></blockquote><hr><h2 id="小贴士"><a href="#小贴士" class="headerlink" title="小贴士"></a>小贴士</h2><ul><li><p><strong>同时保留 GitHub Pages</strong>：完全没冲突。Vercel 会有 <code>xxx.vercel.app</code> 域名；你可以在导航里放“镜像”链接。</p></li><li><p><strong>缓存优化（可选）</strong>：根目录放一个 <code>vercel.json</code> 给静态资源长缓存（HTML 不缓存），提升访问体验：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123; &quot;version&quot;: 2, &quot;cleanUrls&quot;: true,</span><br><span class="line">  &quot;headers&quot;: [</span><br><span class="line">    &#123; &quot;source&quot;: &quot;/(.*)\\.(js|css|png|jpg|jpeg|webp|svg|gif)&quot;,</span><br><span class="line">      &quot;headers&quot;: [&#123; &quot;key&quot;: &quot;Cache-Control&quot;, &quot;value&quot;: &quot;public, max-age=31536000, immutable&quot;&#125;] &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><blockquote><p>如果找不到<strong>VERCEL_ORG_ID</strong>，请看下面的方案</p></blockquote><h3 id="在-Vercel-面板里找到-ORG（账号-团队）ID"><a href="#在-Vercel-面板里找到-ORG（账号-团队）ID" class="headerlink" title="在 Vercel 面板里找到 ORG（账号&#x2F;团队）ID"></a>在 Vercel 面板里找到 ORG（账号&#x2F;团队）ID</h3><p><strong>如果是个人账号：</strong></p><ol><li>右上角头像 → <strong>Account Settings</strong>（账户设置）。</li><li><strong>General &#x2F; Account</strong> 页面里能看到 <strong>User ID</strong>（有时也显示为 Team&#x2F;Org ID），形如 <code>team_xxxxx</code> 或 <code>user_xxxxx</code>。这就是 <code>VERCEL_ORG_ID</code>。</li></ol><p><strong>如果是在团队下：</strong></p><ol><li>左上角团队切换（或头像菜单）进入 <strong>Team Settings</strong>。</li><li><strong>General</strong> 页面里能看到 <strong>Team ID</strong>（形如 <code>team_xxxxx</code>）。它就是 <code>VERCEL_ORG_ID</code>。</li></ol><p>把这个 ID 连同你已有的 <code>VERCEL_PROJECT_ID</code> 和 <code>VERCEL_TOKEN</code> 一起放进 GitHub 仓库的 <strong>Settings → Secrets and variables → Actions</strong> 即可。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Vercel 是一个为开发者提供工具、工作流和基础设施的平台，可以让你更快地构建和部署你的 Web 应用，而无需额外的配置。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;vercel官网：&lt;a href=&quot;https://link.juejin.cn</summary>
-      
-    
-    
-    
-    <category term="教程" scheme="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Hexo" scheme="https://wenjiew-astro.github.io/categories/%E6%95%99%E7%A8%8B/Hexo/"/>
-    
-    
-    <category term="教程" scheme="https://wenjiew-astro.github.io/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Github主页" scheme="https://wenjiew-astro.github.io/tags/Github%E4%B8%BB%E9%A1%B5/"/>
     
   </entry>
   
