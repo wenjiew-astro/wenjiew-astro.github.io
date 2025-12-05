@@ -6,7 +6,7 @@
   <link href="https://wenjiew-astro.github.io/atom.xml" rel="self"/>
   
   <link href="https://wenjiew-astro.github.io/"/>
-  <updated>2025-12-05T09:30:47.304Z</updated>
+  <updated>2025-12-05T09:34:21.607Z</updated>
   <id>https://wenjiew-astro.github.io/</id>
   
   <author>
@@ -17,19 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>谷歌Gemini乱码解决方案</title>
-    <link href="https://wenjiew-astro.github.io/2025/12/05/%E8%B0%B7%E6%AD%8CGemini%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
-    <id>https://wenjiew-astro.github.io/2025/12/05/%E8%B0%B7%E6%AD%8CGemini%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</id>
+    <title>Gemini乱码解决方案</title>
+    <link href="https://wenjiew-astro.github.io/2025/12/05/Gemini%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>https://wenjiew-astro.github.io/2025/12/05/Gemini%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</id>
     <published>2025-12-05T09:26:12.000Z</published>
-    <updated>2025-12-05T09:30:47.304Z</updated>
+    <updated>2025-12-05T09:34:21.607Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="谷歌gemini乱码解决方案"><a href="#谷歌gemini乱码解决方案" class="headerlink" title="谷歌gemini乱码解决方案"></a>谷歌gemini乱码解决方案</h1><blockquote><p>问题描述：网页版Gemini打开经常出现这些乱码文字，浏览器用edge和chrom都试过，还是无法解决，乱码情况如下</p></blockquote><p>一般认为这个是梯子或者DNS有问题，网上教程说是在clash规则中添加一个直连的网址，但是我试过了，没有用。</p><p>下面是我无意中找到的解决方案，事情的起因是因为我Linux登录谷歌的时候人机验证不显示，所以为了解决这个问题，下载了插件，导入了一些相关内容，居然无意中修好了Gemini的bug。下面是详细操作：</p><p>1，打开电脑自带的微软浏览器，转到浏览器右上角设置 &gt; 扩展 &gt; 打开 Microsoft Edge 外接程序网站，安装扩展工具。</p><p>2，搜索安装 <a href="https://he.firefoxcn.net/">Header Editor</a> 扩展插件，它支持 reCAPTCHA 镜像服务，能管理浏览器请求，包括修改请求头和响应头、重定向请求、取消请求。</p><p>3，打开右上角的扩展，在工具栏调出 Header Editor 扩展插件。</p><p>4，配置 Header Editor 扩展插件，转到管理 &gt; 导入和导出，输入 github 的地址，点击下载按钮导入下载规则，规则包括 Google APIs，reCaptcha 和 Content Security。</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://azurezeng.github.io/static/HE-GoogleRedirect.json</span><br></pre></td></tr></table></figure><p>5，最后保存下载规则，就成功配置 Header Editor 扩展插件了。刷新Gemini页面就会看到一切都恢复了。</p><p>大功告成，成果展示：</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="gemini乱码解决方案"><a href="#gemini乱码解决方案" class="headerlink" title="gemini乱码解决方案"></a>gemini乱码解决方案</h1><blockquote><p>问题描述：网页版Gemini打开经常出现这些乱码文字，浏览器用edge和chrom都试过，还是无法解决，乱码情况如下</p></blockquote><p>一般认为这个是梯子或者DNS有问题，网上教程说是在clash规则中添加一个直连的网址，但是我试过了，没有用。</p><p>下面是我无意中找到的解决方案，事情的起因是因为我Linux登录谷歌的时候人机验证不显示，所以为了解决这个问题，下载了插件，导入了一些相关内容，居然无意中修好了Gemini的bug。下面是详细操作：</p><p>1，打开电脑自带的微软浏览器，转到浏览器右上角设置 &gt; 扩展 &gt; 打开 Microsoft Edge 外接程序网站，安装扩展工具。</p><p>2，搜索安装 <a href="https://he.firefoxcn.net/">Header Editor</a> 扩展插件，它支持 reCAPTCHA 镜像服务，能管理浏览器请求，包括修改请求头和响应头、重定向请求、取消请求。</p><p>3，打开右上角的扩展，在工具栏调出 Header Editor 扩展插件。</p><p>4，配置 Header Editor 扩展插件，转到管理 &gt; 导入和导出，输入 github 的地址，点击下载按钮导入下载规则，规则包括 Google APIs，reCaptcha 和 Content Security。</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://azurezeng.github.io/static/HE-GoogleRedirect.json</span><br></pre></td></tr></table></figure><p>5，最后保存下载规则，就成功配置 Header Editor 扩展插件了。刷新Gemini页面就会看到一切都恢复了。</p><p>大功告成，成果展示：</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;谷歌gemini乱码解决方案&quot;&gt;&lt;a href=&quot;#谷歌gemini乱码解决方案&quot; class=&quot;headerlink&quot; title=&quot;谷歌gemini乱码解决方案&quot;&gt;&lt;/a&gt;谷歌gemini乱码解决方案&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;问题描述：网页版G</summary>
+    <summary type="html">&lt;h1 id=&quot;gemini乱码解决方案&quot;&gt;&lt;a href=&quot;#gemini乱码解决方案&quot; class=&quot;headerlink&quot; title=&quot;gemini乱码解决方案&quot;&gt;&lt;/a&gt;gemini乱码解决方案&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;问题描述：网页版Gemini打开经</summary>
       
     
     
